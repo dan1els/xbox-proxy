@@ -49,7 +49,7 @@ $(which docker) run --name bind -d -v /opt/hbo-proxy/data:/data -p 53:53/udp -t 
 $(which docker) run --name sniproxy -d -v /opt/hbo-proxy/data:/data --net=host -t ab77/sniproxy
 
 echo "Testing DNS"
-$(which dig) hbo.com @$ipaddr
+$(which dig) netflix.com @$ipaddr
 
 echo "Testing proxy"
 echo "GET /" | $(which openssl) s_client -servername netflix.com -connect $ipaddr:443
