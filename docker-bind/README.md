@@ -1,7 +1,7 @@
-# netflix-proxy
-Docker packaged smart DNS proxy to watch Netflix out of region using BIND and sniproxy.
+# hbo-proxy
+Docker packaged smart DNS proxy to watch HBO out of region using BIND and sniproxy.
 
 # Instructions
-See, https://github.com/ab77/netflix-proxy
+See, https://github.com/djensenius/hbo-proxy
 
 -- ab1

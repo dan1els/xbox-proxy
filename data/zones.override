@@ -1,4 +1,9 @@
-zone "netflix.com." {
+zone "hbo.com." {
+    type master;
+    file "/data/db.override";
+};
+
+zone "hbonow.com." {
     type master;
     file "/data/db.override";
 };

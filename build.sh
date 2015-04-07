@@ -4,7 +4,7 @@
 set -e
 
 # change to working directory
-root="/opt/netflix-proxy"
+root="/opt/hbo-proxy"
 pushd $root
 
 # obtain the interface with the default gateway say
@@ -45,8 +45,8 @@ echo "Building docker containers"
 #$(which docker) build -t sniproxy docker-sniproxy
 
 echo "Starting Docker containers"
-$(which docker) run --name bind -d -v /opt/netflix-proxy/data:/data -p 53:53/udp -t ab77/bind
-$(which docker) run --name sniproxy -d -v /opt/netflix-proxy/data:/data --net=host -t ab77/sniproxy
+$(which docker) run --name bind -d -v /opt/hbo-proxy/data:/data -p 53:53/udp -t ab77/bind
+$(which docker) run --name sniproxy -d -v /opt/hbo-proxy/data:/data --net=host -t ab77/sniproxy
 
 echo "Testing DNS"
 $(which dig) netflix.com @$ipaddr
