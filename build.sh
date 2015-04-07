@@ -49,7 +49,7 @@ $(which docker) run --name bind -d -v /opt/hbo-proxy/data:/data -p 53:53/udp -t 
 $(which docker) run --name sniproxy -d -v /opt/hbo-proxy/data:/data --net=host -t ab77/sniproxy
 
 echo "Testing DNS"
-$(which dig) netflix.com @$ipaddr
+$(which dig) hbo.com @$ipaddr
 
 echo "Testing proxy"
 echo "GET /" | $(which openssl) s_client -servername netflix.com -connect $ipaddr:443
@@ -60,5 +60,5 @@ cp init/* /etc/init
 # change back to original directory
 popd
 
-echo "Change your DNS to" $ipaddr "and start watching Netflix out of region."
+echo "Change your DNS to" $ipaddr "and start watching HBO out of region."
 echo "Done!"
