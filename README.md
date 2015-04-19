@@ -1,5 +1,5 @@
 # hbo-proxy
-Docker packaged smart DNS proxy to watch HBO out of region using BIND and sniproxy[n1].
+Docker packaged smart DNS proxy to watch HBO out of region using BIND and sniproxy[n1]. Based on netflix-proxy: https://github.com/ab77/netflix-proxy
 
 # Instructions
 These instructions are based on a standard Ubuntu Docker image provided by Digital Ocean, but should work on any Linux distubution with Docker pre-installed.
@@ -12,6 +12,6 @@ These instructions are based on a standard Ubuntu Docker image provided by Digit
 5. Point your DNS at the Droplet IP and watch HBO out of region.
 6. Enjoy!
 
--- ab1
+
 
 [n1] https://github.com/dlundquist/sniproxy by Dustin Lundquist dustin@null-ptr.net
