@@ -7,3 +7,28 @@ zone "hbonow.com." {
     type master;
     file "/data/db.override";
 };
+
+zone "xsts.auth.xboxlive.com" {
+    type master;
+    file "/data/db.override";
+};
+
+zone "k1-api.wbagora.com" {
+    type master;
+    file "/data/db.override";
+};
+
+zone "prod-network-api.wbagora.com" {
+    type master;
+    file "/data/db.override";
+};
+
+zone "account.wbgames.com" {
+    type master;
+    file "/data/db.override";
+};
+
+zone "metallica-api.wbagora.com" {
+    type master;
+    file "/data/db.override";
+};
